@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family= Raleway: wght @900 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Fira+Code:wght@500 & family= Luckiest+Guy & family= Mochiy+Pop+P+One & family= Raleway: wght@900 & família= Source+Code+Pro & display=swap');
+
+:root {
+    --cor1: #33A8DB;
+    --cor2: #00000f;
+    --cor3: #FFFFFF;
+    --cor-borda: #33A8DB80;
+    --cor-logo: rgba(0, 0, 0, .2);
+    --font-poppins: 'Poppins', sans-serif;
+    --cor-rodape: #212324;
+}
+html {
+    font-size: 62%;
+}
+body {
+    font-family: var(--font-poppins);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+header.banner {
+    background: linear-gradient(153deg, rgba(23, 79, 119, 0.6786064767703957) 23%, rgba(7, 37, 61, 0.8550770650056898) 47%, rgba(0, 6, 10, 0.9251050762101716) 76%, rgba(0, 0, 0, 0.9251050762101716) 98%), url(/assets/banner.png) no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 1rem 30px;
+}
+header.banner div.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+}
+header.banner div.banner-content div.logo {
+    background-color: var(--cor-logo);
+    height: 23rem;
+    width: 24rem;
+    border-radius: 50%;
+    position: relative;
+}
+header.banner div.banner-content div.logo > img {
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header.banner div.banner-content > h1 {
+    font-size: 2.2rem;
+    color: var(--cor1);
+    font-weight: bolder;
+}
+header.banner div.banner-content > p {
+    color: var(--cor3);
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+header.banner div.banner-content > a > button {
+    width: 21rem;
+    height: 55px;
+    border: 2px solid var(--cor1);
+    background-color: transparent;
+    color: var(--cor1);
+    font-weight: 700;
+    transition: ease-in-out .3s;
+}
+header.banner div.banner-content > a > button:hover{
+    background-color: var(--cor1);
+    color: white;
+}
+
+section.grade-curso {
+    background-color: black;
+    padding: 90px 30px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-top: 1px solid var(--cor1);
+}
+section.grade-curso > h1 {
+    color: var(--cor1);
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+section.grade-curso > p {
+    color: var(--cor3);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 20px;
+    max-width: 700px;
+}
+section.grade-curso div.lista-modulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+section.grade-curso div.lista-modulos div.modulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1.5px solid var(--cor1);
+    padding: 10px;
+    border-radius: 25px;
+}
+section.grade-curso div.lista-modulos div.modulo > p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+section.grade-curso div.lista-modulos div.modulo > p > strong {
+    color: var(--cor1);
+}
+
+section.Tranform-world {
+    background-color: aquamarine;
+    height: 70vh;
+    background: url(/assets/woman-code.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid var(--cor1);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+}
+section.Tranform-world > p {
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    max-width: 20rem;
+    text-shadow: 3px 3px 1px var(--cor1);
+}
+section.professional-challenge {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: black;
+    border-top: 1px solid var(--cor1);
+}
+section.professional-challenge > h1 {
+    color: var(--cor1);
+    font-size: 1.8rem;
+    font-family: var(--font-family);
+    text-align: center;
+}
+section.professional-challenge > img {
+    width: 45rem;
+}
+section.professional-challenge > p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+footer.rodapé {
+    background: var(--cor-rodape);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--cor1);
+}
+footer.rodapé > p {
+    color: var(--cor3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+footer.rodapé > p > a {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bolder;
+}
+footer.rodapé > p > a:hover {
+    text-decoration: underline var(--cor1);
+}
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+    section.professional-challenge > p {
+        max-width: 800px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 90%;
+    }
+    .lista-modulos {
+        width: 550px;
+    }
+}
